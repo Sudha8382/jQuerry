@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            height: 200px;
+            border: 10px solid red;
+            width: 400px;
+            margin: 10px;
+            text-align: center;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <center>
+    <script src="js/jquery-3.7.1.js"></script>
+    <img src="images/bird5.jpeg" alt="">
+    <button id="btn1">Ragister</button>
+    <button id="btn2">Login</button>
+    <button id="btn3">slideUp</button>
+    <button id="btn4">SlideDown</button>
+    <button id="btn5">slideToggle</button>
+    <button id="btn6">fadeOut</button>
+    <button id="btn7">fadeIn</button>
+    <button id="btn8">fadeToggle</button>
+</center>
+    <script>
+        $(document).ready(function(){
+            $("#btn1").click(function(){
+            $("img").show(1000)
+            })
+            $("#btn2").click(function(){
+                $("img").show(5000)
+            })
+            $("#btn3").click(function(){
+                $("img").slideUp(3000)
+            })
+            $("#btn4").click(function(){
+                $("img").slideDown(3000)
+            })
+            $("#btn5").click(function(){
+                $("img").slideToggle(3000)
+            })
+            $("#btn6").click(function(){
+                $("img").fadeOut(3000)
+            })
+            $("#btn7").click(function(){
+                $("img").fadeIn(3000)
+            })
+            $("#btn8").click(function(){
+                $("img").fadeToggle(3000)
+            })
+        })
+    </script>
+</body>
+</html>

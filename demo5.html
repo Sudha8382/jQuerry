@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>swap value from one text to another</title>
+</head>
+<body>
+    <script src="js/jquery-3.7.1.js"></script>
+    <input type="text" name="" id="txt1">
+    <input type="text" name="" id="txt2">
+    <button>SWAP VALUE</button>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+               var t1= $("#txt1").val()
+               var t2=$("#txt2").val()
+                $("#txt1").val(t2)
+                $("#txt2").val(t1)
+            })
+        })
+    </script>
+</body>
+</html>

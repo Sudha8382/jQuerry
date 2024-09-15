@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .box{
+            height: 500px;
+            width: 1000px;
+            margin: 100px auto;
+            background: linear-gradient(to left,rgb(152, 104, 196),rgb(215, 215, 107),rgb(112, 181, 112));
+            padding-top: 50px;
+            
+        }
+        .inner{
+            height: 400px;
+            width: 600px;
+            margin-left: 200px;
+            padding: 20px 40px;
+            font-size: 20px;
+            text-transform: capitalize;
+            color: white;
+            box-shadow: 0px 0px 4px 5px blue;
+        }
+        .a{
+            height: 30px;
+            width: 100%;
+            margin-bottom: 10px;
+            background: none;
+            border: none;
+            border-top: 1px solid white;
+        }
+        .b{
+            height: 30px;
+            width: 100%;
+            font-size: 15px;
+            color:white;
+            background-color: blue;
+            border: none;
+            text-transform: capitalize;
+        }
+    </style>
+</head>
+<body>
+    <script src="js/jquery-3.7.1.js"></script>
+    <center>
+        <div class="box" id="form1">
+            <div class="inner">
+            <form style="margin-top: 70px;" action="post">
+                User name:<br/>
+                <input type="text" class="a"><br/>
+                Enter email:<br/>
+                <input type="email" class="a"><br/>
+                Enter password:<br/>
+                <input type="password" class="a"><br/>
+                Confirm password:<br/>
+                <input type="password" class="a"><br/>
+                <input type="submit" value="register" class="b">
+            </form>
+            </div>
+                </div>
+            <!-- Login form -->
+
+            <div class="box" id="form2">
+                <div class="inner">
+                <form style="margin-top: 70px;" action="post">
+                    User name:
+                    <input type="text" class="a"><br/>
+                    Enter password:
+                    <input type="password" class="a"><br/>
+                    Confirm password:
+                    <input type="password" class="a"><br/>
+                    <input type="submit" value="Login" class="b">
+                </form>
+                </div>
+                    </div>
+
+                    <!-- log out -->
+
+                    <div class="box" id="form3">
+                        <div class="inner">
+                        <form style="margin-top: 70px;" action="post">
+                            Enter email:
+                            <input type="email" class="a"><br/>
+                            Enter password:
+                            <input type="password" class="a"><br/>
+                            Confirm password:
+                            <input type="password" class="a"><br/>
+                            <input type="submit" value="Logout" class="b">
+                        </form>
+                        </div>
+                            </div>
+                            
+            <BUtton id="btn1">Ragister</BUtton>
+            <button id="btn2">Login</button>
+            <button id="btn3">LogOut</button>
+        </center>
+        <script>
+            $(document).ready(function(){
+                $("#btn1").click(function(){
+                $("#form1").show("5000")
+                $("#form2").hide("5000")
+                $("#form3").hide("5000")
+                })
+                $("#btn2").click(function(){
+                    $("#form2").show("5000")
+                    $("#form1").hide("5000")
+                    $("#form3").hide("5000")
+                })
+                $("#btn3").click(function(){
+                    $("#form3").show("fast")
+                    $("#form1").hide("fast")
+                    $("#form2").hide("fast")
+                })
+            })
+        </script>
+</body>
+</html>

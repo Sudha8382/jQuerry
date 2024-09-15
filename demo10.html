@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="js/jquery-3.7.1.js"></script>
+    <div>TECHPILE TECHNOLOGY</div>
+    <button>SET STYLE</button>
+    <script>
+        $(Document).ready(function(){
+            $("button").click(function(){
+                // $("div").css("background","red")
+                // $("div").css("color","yellow")
+                // $("div").css("border","10px solod green")
+                // $("div").css("text-align","center")
+                $("div").css({"background":"red","color":"yellow","padding":"15"})
+            })
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<html>
+	<head>
+		<style>
+			div
+			{
+				height:400px;
+				width:500px;
+				background:red;
+				color:white;
+				padding:20px;
+				border:10px solid yellow;
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+			Paragraphs are the building blocks of papers. Many students define paragraphs in terms of length: a paragraph is a group of at least five sentences, a paragraph is half a page long, etc. In reality, though, the unity and coherence of ideas among sentences is what constitutes a paragraph.
+			Paragraphs are the building blocks of papers. Many students define paragraphs in terms of length: a paragraph is a group of at least five sentences, a paragraph is half a page long, etc. In reality, though, the unity and coherence of ideas among sentences is what constitutes a paragraph.
+		</div><br>
+		<button id="btn1">Before</button>
+		<button id="btn2">After</button>
+		<button id="btn3">Prepend</button>
+		<button id="btn4">Append</button>
+		<script src="js/jquery-3.7.1.js"></script>
+		<script>
+			$(document).ready(function(){
+				$("#btn1").click(function(){
+					$("div").before("<b>I am added with before function</b><img src='images/lotus.jpg' height='200px'>")
+				})
+				$("#btn2").click(function(){
+					$("div").after("<b>I am added with after function</b><img src='images/lotus.jpg' height='200px'>")
+				})
+				$("#btn3").click(function(){
+					$("div").prepend("<b>I am added with prepend function</b><img src='images/lotus.jpg' height='50px'>")
+				})
+				$("#btn4").click(function(){
+					$("div").append("<b>I am added with append function</b><img src='images/lotus.jpg' height='5
+                    0px'>")
+				})
+			})
+		</script>
+	</body>
+</html>

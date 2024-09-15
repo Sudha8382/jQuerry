@@ -1,0 +1,77 @@
+<html>
+	<head>
+		<style>
+			
+		</style>
+	</head>
+	<body>
+		<button id="btn1">Before</button>
+		<button id="btn2">After</button>
+		<button id="btn3">Prepend</button>
+		<button id="btn4">Append</button>
+		<button id="btn5">Empty</button>
+		<button id="btn6">Remove</button>
+		<button id="btn7">Set Style</button>
+		<table border="1">
+			<tr>
+				<td>Ayush</td>
+				<td>IET Lucknow</td>
+				<td>It</td>
+			</tr>
+			<tr>
+				<td>Rahul</td>
+				<td>IET Lucknow</td>
+				<td>It</td>
+			</tr>
+			<tr>
+				<td>vikash</td>
+				<td>IET Lucknow</td>
+				<td>It</td>
+			</tr>
+			<tr>
+				<td>Shashi pratap</td>
+				<td>IET Lucknow</td>
+				<td>It</td>
+			</tr>
+			<tr>
+				<td>surya</td>
+				<td>IET Lucknow</td>
+				<td>It</td>
+			</tr>
+		</table>
+		<script src="js/jquery-3.7.1.js"></script>
+		<script>
+			$(document).ready(function(){
+				var r="<tr><td>Mohit</td><td>MGIMT Lucknow</td><td>It</td></tr>"
+				$("#btn7").click(function(){
+					//$("tr").css({"background":"red","color":"white"})
+					$("tr:first").css({"background":"black","color":"white"})
+					$("tr:last").css({"background":"red","color":"white"})
+					//$("td:first").css({"background":"green","color":"white"})
+					//$("tr:eq(2)").css({"background":"blue","color":"white"})//eq means equal
+					//$("tr:eq(0)").css({"background":"blue","color":"white"})
+					$("tr:lt(2)").css({"background":"blue","color":"white"})//lt means less than
+					$("tr:gt(1)").css({"background":"purple","color":"white"})//gt means greater than
+				})
+				$("#btn3").click(function(){
+					$("table").prepend(r)
+				})
+				$("#btn4").click(function(){
+					$("table").append(r)
+				})
+				$("#btn1").click(function(){
+					$("tr:first").before(r)
+				})
+				$("#btn2").click(function(){
+					$("tr:first").after(r)
+				})
+				$("#btn5").click(function(){
+					$("table td").empty()
+				})
+				$("#btn6").click(function(){
+					$("table td").remove()
+				})
+			})
+		</script>
+	</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p></p>
+    <script src="js/jquery-3.7.1.js"></script>
+    <input type="password" name="" id="pass1" placeholder="password"><br/><br/>
+    <input type="password" name="" id="pass2" placeholder="Confirm password"><br/>
+    <br/>
+    <button>Check</button>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                var x=$("#pass1").val()
+                var y=$("#pass2").val()
+                if(x==y){
+                    $("p").text("password matched")
+                    $("p").css({"color":"green"})
+                    $("#pass1").css({"border":"2px solid green"})
+                }
+                else{
+                    $("p").text("password not matched")
+                    $("p").css({"color":"red"})
+                    $("#pass2").css({"border":"2px solid red"})
+                }
+            })
+        })
+    </script>
+</body>
+</html>

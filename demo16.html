@@ -1,0 +1,76 @@
+<html>
+	<head>
+		<style>
+			div
+			{
+				width:300px;
+				background:silver;
+				padding:20px;
+				box-sizing:border-box;
+				border:2px solid gray;
+			}
+			#stdes,#itdes,#wtdes,#vtdes,#otdes
+			{
+				display:none;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="st">Summer Training</div>
+		<div id="stdes">
+			Paragraphs are the building blocks of papers. Many students define paragraphs in terms of length: a paragraph is a group of at least five sentences, a paragraph is half a page long, etc. In reality, though, the unity and coherence of ideas among sentences is what constitutes a paragraph
+			Paragraphs are the building blocks of papers. Many students define paragraphs in terms of length: a paragraph is a group of at least five sentences, a paragraph is half a page long, etc. In reality, though, the unity and coherence of ideas among sentences is what constitutes a paragraph
+
+		</div>
+		<div id="wt">Winter Training</div>
+		<div id="wtdes">
+			Paragraphs are the building blocks of papers. Many students define paragraphs in terms of length: a paragraph is a group of at least five sentences, a paragraph is half a page long, etc. In reality, though, the unity and coherence of ideas among sentences is what constitutes a paragraph
+			Paragraphs are the building blocks of papers. Many students define paragraphs in terms of length: a paragraph is a group of at least five sentences, a paragraph is half a page long, etc. In reality, though, the unity and coherence of ideas among sentences is what constitutes a paragraph
+
+		</div>
+		<div id="it">Industrial Training</div>
+		<div id="itdes">
+			Paragraphs are the building blocks of papers. Many students define paragraphs in terms of length: a paragraph is a group of at least five sentences, a paragraph is half a page long, etc. In reality, though, the unity and coherence of ideas among sentences is what constitutes a paragraph
+			Paragraphs are the building blocks of papers. Many students define paragraphs in terms of length: a paragraph is a group of at least five sentences, a paragraph is half a page long, etc. In reality, though, the unity and coherence of ideas among sentences is what constitutes a paragraph
+
+		</div>
+		<div id="vt">Vocational Training</div>
+		<div id="vtdes">
+			Paragraphs are the building blocks of papers. Many students define paragraphs in terms of length: a paragraph is a group of at least five sentences, a paragraph is half a page long, etc. In reality, though, the unity and coherence of ideas among sentences is what constitutes a paragraph
+			Paragraphs are the building blocks of papers. Many students define paragraphs in terms of length: a paragraph is a group of at least five sentences, a paragraph is half a page long, etc. In reality, though, the unity and coherence of ideas among sentences is what constitutes a paragraph
+
+		</div>
+		<div id="ot">Other Training</div>
+		<div id="otdes">
+			Paragraphs are the building blocks of papers. Many students define paragraphs in terms of length: a paragraph is a group of at least five sentences, a paragraph is half a page long, etc. In reality, though, the unity and coherence of ideas among sentences is what constitutes a paragraph
+			Paragraphs are the building blocks of papers. Many students define paragraphs in terms of length: a paragraph is a group of at least five sentences, a paragraph is half a page long, etc. In reality, though, the unity and coherence of ideas among sentences is what constitutes a paragraph
+
+		</div>
+		<script src="js/jquery-3.7.1.js"></script>
+		<script>
+			$(document).ready(function(){
+				$("#stdes").slideDown(1000)
+				$("#wt").click(function(){
+					$("#wtdes").slideDown(1000)
+					$("#stdes,#itdes,#vtdes,#otdes").slideUp(1000)
+				})
+				$("#it").click(function(){
+					$("#itdes").slideDown(1000)
+					$("#wtdes,#stdes,#vtdes,#otdes").slideUp(1000)
+				})
+				$("#vt").click(function(){
+					$("#vtdes").slideDown(1000)
+					$("#itdes,#stdes,#wtes,#otdes").slideUp(1000)
+				})
+				$("#ot").click(function(){
+					$("#otdes").slideDown(1000)
+					$("#vtdes,#stdes,#itdes,#wtdes").slideUp(1000)
+				})
+				$("#st").click(function(){
+					$("#stdes").slideDown(1000)
+					$("#wtdes,#itdes,#vtdes,#otdes").slideUp(1000)
+				})
+			})
+		</script>
+	</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>get and set in jquery </title>
+</head>
+<body>
+    <script src="js/jquery-3.7.1.js"></script>
+    user name:<br/>
+    <input type="email" name="" id="txt1"><span id="uname"></span><br/>
+    password:<br/>
+    <input type="password" name="" id="txt2"><span id="pass"></span><br/>
+    <button>Print Data</button>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                var x=$("#txt1").val()
+                var y=$("#txt2").val()
+                $("#uname").text(x)
+                $("#pass").text(y)
+            })
+        })
+    </script>
+
+</body>
+</html>

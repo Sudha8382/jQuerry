@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            height: 100px;
+            border: 10px solid red;
+            width: 200px;
+            margin: 10px;
+            text-align: center;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <script src="js/jquery-3.7.1.js"></script>
+    <div id="box1">Ragister</div>
+    <div id="box2">Login</div>
+    <button id="btn1">Ragister</button>
+    <button id="btn2">Login</button>
+    <script>
+        $(document).ready(function(){
+            $("#btn1").click(function(){
+            $("#box1").show("fast")
+            $("#box2").hide("fast")
+            })
+            $("#btn2").click(function(){
+                $("#box2").show("fast")
+                $("#box1").hide("fast")
+            })
+        })
+    </script>
+</body>
+</html>

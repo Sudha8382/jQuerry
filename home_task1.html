@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <script src="js/jquery-3.7.1.js"></script>
+</head>
+<body>
+    Name:<br/>
+    <input type="text"  id="uname"><span id="t1"></span><br/><br/>
+    Collage Name:<br/>
+    <input type="text" name="" id="cname" ><span id="t2"></span><br/><br/>
+    year:<br/>
+    <input type="text" id="year"><span id="t3"></span><br/><br/>
+    Email:<br/>
+    <input type="email" name="" id="email"><span id="t4"></span><br/><br/>
+    Course:<br/>
+    <input type="text" name="" id="course"><span id="t5"></span><br/><br/>
+    Contact No:<br/>
+    <input type="number" id="cno"><span id="t6"></span><br/><br/>
+   <button id="button">click me!</button>
+   <script>
+    $(document).ready(function(){
+        $(button).click(function(){
+            var x=$("#uname").val()
+            $("#t1").text(x)
+            var y=$("#cname").val()
+            $("#t2").text(y)
+            var z=$("#year").val()
+            $("#t3").text(z)
+            var a=$("#email").val()
+            $("#t4").text(a)
+            var b=$("#course").val()
+            $("#t5").text(b)
+            var c=$("#cno").val()
+            $("#t6") .text(c)           
+        })
+    })
+   </script>
+
+</body>
+</html>

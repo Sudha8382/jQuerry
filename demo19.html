@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <select  >
+        <option >HTML</option>
+        <option >CSS</option>
+        <option >JS</option>
+        <option >PHP</option>
+    </select>
+    <input type="text"/>
+    <script src="JS/jquery-3.7.1.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("select").change(function(){
+              var x=$(this).val()
+            //   alert(x)
+            // $("p").html(x)
+            if(x=="HTML")
+            {
+                $("input").val(2000)
+            }
+            else if(x=="CSS")
+            {
+                $("input").val(5000)
+            }
+            else if(x=="JS")
+            {
+                $("input").val(300)
+            }
+            else{
+                $("input").val(2100)
+            }
+            })
+        })
+    </script>
+</body>
+</html>

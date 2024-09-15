@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="js/jquery-3.7.1.js"></script>
+    <h1>Techpile Technology Pvt.ltd</h1>
+    <button>CLICK ME!</button>
+    <script>
+        $(document).ready(function(){
+            $("h1").click(function(){
+                // var x=$("h1").text()
+                alert((this).text())//to select current element we used this element
+               
+            })
+        })
+    </script>
+</body>
+</html>

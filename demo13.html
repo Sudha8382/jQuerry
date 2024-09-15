@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="js/jquery-3.7.1.js"></script>
+    <img src="images/lotus.jpg" alt="" height="250px"><br/>
+    <img src="images/kk.jpg" alt="" height="250px"><br/>
+    <button>CLICK ME !</button>
+<script>
+    $(document).ready(function(){
+        $("button").click(function(){
+            var x=$("img").attr("src")
+            // alert(x)
+            $("img").attr("src","images/kk.jpg")
+        })
+    })
+</script>
+</body>
+</html>
